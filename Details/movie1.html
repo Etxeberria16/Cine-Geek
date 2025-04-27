@@ -21,27 +21,29 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('inicio')">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('historia')">Historia</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('cartelera')">Cartelera</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('proximamente')">Próximos
-                            estrenos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"
-                            onclick="loadSection('promociones')">Promociones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('dulceria')">Dulcería</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('contacto')">Contacto</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('historia')">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('cartelera')">Cartelera</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('proximamente')">Próximos estrenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('promociones')">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('dulceria')">Dulcería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="loadSection('contacto')">Contacto</a></li>
                 </ul>
+
+                <!-- Buscador agregado dentro del collapse -->
+                <form class="d-flex ms-lg-3 mt-3 mt-lg-0">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                    <button class="btn btn-primary" type="submit" style="background: #09f;">Buscar</button>
+                </form>
             </div>
         </div>
     </nav>
 
-    <div class="container movie-container mt-5"> <br><br>
+
+    <div class="container-fluid movie-container mt-5 px-5">
         <div class="row">
           <div class="col-md-4 text-center">
             <img src="../Cine Geek/images/banner.jpg" alt="Conejos asesinos" class="movie-poster">
@@ -61,13 +63,10 @@
         </div>
       
         <!-- Contenedor del video -->
-        <div class="video-container mt-4">
+        <div class="video-container">
           <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-
-    <!-- Contenedor dinámico -->
-    <main id="content" class="container my-5"></main>
 
     <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-4">
